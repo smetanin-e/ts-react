@@ -6,6 +6,12 @@ import PersonList from './components/PersonList';
 import Status from './components/Status';
 import Heading from './components/Heading';
 import Oskar from './components/Oskar';
+import Button from './components/Button';
+import Input from './components/Input';
+import { log } from 'node:console';
+import Container from './components/Container';
+import LoggedIn from './components/state/LoggedIn';
+import User from './components/state/User';
 
 const App = () => {
   const personName = {
@@ -35,10 +41,18 @@ const App = () => {
       <PersonList names={nameList} />
       <Status status='success' /> */}
 
-      <Heading>Children текст</Heading>
+      {/* <Heading>Children текст</Heading>
       <Oskar>
         <Heading>Oscar goes to L DiCaprio</Heading>
       </Oskar>
+
+      <Button handleClick={(event, id) => console.log('button clicked', event.target, id)} />
+      <Input value='' handleChange={(event) => console.log(event.target)} /> */}
+
+      <Container styles={{ border: '1px solid black', padding: '1rem' }} />
+
+      {/* <LoggedIn /> */}
+      <User />
     </div>
   );
 };

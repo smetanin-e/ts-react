@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 15px;
+    padding-block: 5px;
+    color: #fff;
+    background: #f05454;
+    font-size: 18px;
+    cursor: pointer;
+}

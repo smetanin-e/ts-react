@@ -1,14 +1,13 @@
+import { Name } from './Person.types';
+
 type PersonListProps = {
-  names: {
-    first: string;
-    last: string;
-  }[];
+  names: Name[];
 };
 
-const PersonList = (props: PersonListProps) => {
+const PersonList = ({ names }: PersonListProps) => {
   return (
     <div>
-      {props.names.map((obj) => (
+      {names.map((obj) => (
         <h2>
           {obj.first} {obj.last}
         </h2>
